@@ -13,17 +13,17 @@ import {
 } from "@/components/ui/dropdown-menu"
 import {Avatar,AvatarFallback,AvatarImage} from "@/components/ui/avatar"
 import NavItems from "./NavItems";
+import { signOut } from "better-auth/api";
 
 
 
-export function UserDropdown() {
+export function UserDropdown({user}: {user:User}) {
     const router = useRouter();
 
     const handleSignOut = async() =>{
-        router.push("/signin");
+        await signOut();
+        router.push("/sign-in");
     }
-
-    const user = {name : "John" , email: "john123@gmail.com"};
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
