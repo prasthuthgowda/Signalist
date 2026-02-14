@@ -151,6 +151,10 @@ declare global {
     type AlertsListProps = {
         alertData: Alert[] | undefined;
     };
+    type UserForNewsEmail = {
+        email : string;
+        name : string;
+    }
 
     type MarketNewsArticle = {
         id: number;

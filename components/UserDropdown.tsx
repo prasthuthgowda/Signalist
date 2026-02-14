@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import {Avatar,AvatarFallback,AvatarImage} from "@/components/ui/avatar"
 import NavItems from "./NavItems";
-import { signOut } from "better-auth/api";
+import { signOut } from "@/lib/actions/auth.actions";
 
 
 
